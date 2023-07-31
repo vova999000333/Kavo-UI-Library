@@ -139,6 +139,10 @@ end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 
+function Kavo:DelGui()
+	game.CoreGui[LibName]:Destroy()
+end
+
 function Kavo:ToggleUI()
     if game.CoreGui[LibName].Enabled then
         game.CoreGui[LibName].Enabled = false
